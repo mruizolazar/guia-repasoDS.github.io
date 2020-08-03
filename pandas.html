@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Pandas | Data Science  </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Margarita Ruiz" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.5 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-12"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Data Science </div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Data Science - Repaso</a></li>
+   <li><a href="introduccin_a_la_ciencia_de_datos.html" class="daddy">Introducción a la Ciencia de Datos</a>
+   <ul class="other-section">
+      <li><a href="interdisciplinaridad.html" class="no-ch">Interdisciplinaridad</a></li>
+      <li><a href="definicin.html" class="no-ch">Definición</a></li>
+      <li><a href="proyecto_de_ciencia_de_datos.html" class="no-ch">Proyecto de Ciencia de datos</a></li>
+      <li><a href="proyectos_de_ciencia_de_datos.html" class="no-ch">Proyectos de Ciencia de datos</a></li>
+      <li><a href="actividad1.html" class="no-ch">Actividad1</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="programacin_con_python_para_ciencia_de_datos.html" class="current-page-parent daddy">Programación con Python para Ciencia de datos</a>
+   <ul>
+      <li><a href="jupyter_notebook.html" class="no-ch">Jupyter notebook</a></li>
+      <li><a href="numpy.html" class="no-ch">Numpy</a></li>
+      <li id="active"><a href="pandas.html" class="active no-ch">Pandas</a></li>
+      <li><a href="actividad2.html" class="no-ch">Actividad2</a></li>
+   </ul>
+   </li>
+   <li><a href="anlisis_exploratorio_de_datos.html" class="daddy">Análisis exploratorio de datos</a>
+   <ul class="other-section">
+      <li><a href="estadstica.html" class="no-ch">Estadística</a></li>
+      <li><a href="introduccin_al_anlisis_exploratorio_de_datos.html" class="no-ch">Introducción al Análisis Exploratorio de datos</a></li>
+      <li><a href="actividad3.html" class="no-ch">Actividad3</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="numpy.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="actividad2.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Pandas</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id17">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Manipulación de datos con Pandas</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta17_111_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;"><img src="Pandas_logo.png" alt="pandas logo" title="pandas-logo" width="600" height="125" /></p>
+<p style="text-align: justify;">En el nivel más básico, los objetos Pandas pueden considerarse como versiones mejoradas de matrices estructuradas NumPy en las que las filas y columnas se identifican con etiquetas en lugar de simples índices enteros. Pandas proporciona una serie de herramientas, métodos y funcionalidades útiles además de las estructuras de datos básicas, pero casi todo lo que sigue requerirá una comprensión de cuáles son estas estructuras. Por lo tanto, antes de continuar, vamos a presentar estas tres estructuras de datos fundamentales de Pandas: <strong>Series</strong>, el <strong>DataFrame</strong> y el <strong>Index</strong>.</p>
+<p style="text-align: justify;"></p>
+<table border="1" style="width: 100%;">
+<tbody>
+<tr>
+<td style="width: 50%; border-style: solid;">
+<p><span style="font-size: 12pt;"><strong>Series</strong></span></p>
+<ul>
+<li><strong>Series</strong> es un objeto unidimensional (1D) similar a la columna de una tabla.</li>
+<li>Toda serie posee un índice.</li>
+</ul>
+</td>
+<td style="width: 50%; border-style: solid;"><img src="img0.4.png" width="291" height="202" style="display: block; margin-left: auto; margin-right: auto;" /></td>
+</tr>
+</tbody>
+</table>
+<table border="1" style="width: 100%;">
+<tbody>
+<tr>
+<td style="width: 50%;">
+<p><strong><span style="font-size: 12pt;">DataFrame</span></strong></p>
+<ul>
+<li>El DataFrame es una estructura de datos tabular que se compone de columnas y filas ordenadas. Como una planilla.</li>
+</ul>
+</td>
+<td style="width: 50%;">
+<p><img src="pandas1.png" alt="DataFrame" title="DataFrame" width="700" height="176" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="1" style="width: 100%;">
+<tbody>
+<tr>
+<td style="width: 50%;">
+<p><strong><span style="font-size: 12pt;">Index</span></strong></p>
+<ul>
+<li>Es un ndarray inmutable que implementa un conjunto ordenado y divisible. Es el objeto básico que almacena las etiquetas del eje para todos los objetos pandas.</li>
+</ul>
+</td>
+<td style="width: 50%;"><img src="img2.png" width="700" height="269" alt="Index-ejemplo" /></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;"><strong>¿Qué resuelve Pandas?</strong></p>
+<ul>
+<li>Python siempre ha sido excelente para la recopilación y preparación de datos, pero no tanto para el análisis y el modelado de datos.</li>
+<li>Pandas ayuda a llenar este vacío, permitiéndole realizar todo su flujo de trabajo de análisis de datos en Python sin tener que cambiar a un lenguaje de programación más específico como por ejemplo R.</li>
+</ul>
+<p style="text-align: justify;"></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="numpy.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="actividad2.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>

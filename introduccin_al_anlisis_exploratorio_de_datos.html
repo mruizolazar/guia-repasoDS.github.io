@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Introducción al Análisis Exploratorio de datos | Data Science  </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Margarita Ruiz" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.5 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-13"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Data Science </div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Data Science - Repaso</a></li>
+   <li><a href="introduccin_a_la_ciencia_de_datos.html" class="daddy">Introducción a la Ciencia de Datos</a>
+   <ul class="other-section">
+      <li><a href="interdisciplinaridad.html" class="no-ch">Interdisciplinaridad</a></li>
+      <li><a href="definicin.html" class="no-ch">Definición</a></li>
+      <li><a href="proyecto_de_ciencia_de_datos.html" class="no-ch">Proyecto de Ciencia de datos</a></li>
+      <li><a href="proyectos_de_ciencia_de_datos.html" class="no-ch">Proyectos de Ciencia de datos</a></li>
+      <li><a href="actividad1.html" class="no-ch">Actividad1</a></li>
+   </ul>
+   </li>
+   <li><a href="programacin_con_python_para_ciencia_de_datos.html" class="daddy">Programación con Python para Ciencia de datos</a>
+   <ul class="other-section">
+      <li><a href="jupyter_notebook.html" class="no-ch">Jupyter notebook</a></li>
+      <li><a href="numpy.html" class="no-ch">Numpy</a></li>
+      <li><a href="pandas.html" class="no-ch">Pandas</a></li>
+      <li><a href="actividad2.html" class="no-ch">Actividad2</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="anlisis_exploratorio_de_datos.html" class="current-page-parent daddy">Análisis exploratorio de datos</a>
+   <ul>
+      <li><a href="estadstica.html" class="no-ch">Estadística</a></li>
+      <li id="active"><a href="introduccin_al_anlisis_exploratorio_de_datos.html" class="active no-ch">Introducción al Análisis Exploratorio de datos</a></li>
+      <li><a href="actividad3.html" class="no-ch">Actividad3</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="estadstica.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="actividad3.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Introducción al Análisis Exploratorio de datos</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id20">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Introducción</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta20_114_2" class="block iDevice_content">
+<div class="exe-text"><p>En 1962, John W. Tukey (Figura) pidió una reforma de las estadísticas en su documento seminal “El futuro del análisis de datos” [Tukey-1962]. Propuso una nueva disciplina científica llamada análisis de datos que incluía la inferencia estadística como un solo componente.</p>
+<table border="1" style="width: 100%;">
+<tbody>
+<tr>
+<td style="width: 17.4962%;"><img src="img0.6.png" style="display: block; margin-left: auto; margin-right: auto;" /></td>
+<td style="width: 82.5038%;">
+<p>En 1962, John W. Tukey (Figura) pidió una reforma de las estadísticas en su documento seminal “El futuro del análisis de datos” [Tukey-1962]. Propuso una nueva disciplina científica llamada <strong>Análisis de datos</strong> que incluía la inferencia estadística como un solo componente.</p>
+<p>El campo del análisis de datos exploratorios se estableció con el libro de Tukey de 1977, el clásico Análisis de datos exploratorios [Tukey-1977].</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-size: 14pt;"><strong>Definición</strong></span></p>
+<ul>
+<li style="text-align: justify;">El análisis exploratorio de datos (EDA) es el proceso de explorar sus datos, y generalmente incluye examinar la estructura y los componentes de su conjunto de datos, las distribuciones de variables individuales y las relaciones entre dos o más variables.</li>
+<li style="text-align: justify;">La herramienta más utilizada para el análisis exploratorio de datos es la visualización datos utilizando una representación gráfica de los datos.</li>
+<li style="text-align: justify;">La visualización de datos es posiblemente la herramienta más importante para el análisis exploratorio de datos porque la información transmitida por la visualización gráfica se puede absorber muy rápidamente y porque generalmente es fácil reconocer patrones en una visualización gráfica.</li>
+<li style="text-align: justify;">La visualización es siempre apoyada por las medidas de resumen. Medidas que pretenden caracterizar el conjunto con la menor distorsión o perdida de información posible. Se realiza el resumen de la característica en uno o dos números.
+<ul>
+<li style="text-align: justify;">Ejemplos: media, mediana, moda, desviación estándar, mínimo, máximo etc.</li>
+</ul>
+</li>
+</ul>
+<p><img src="eda.jpg" alt="imagen de analisis de datos" title="eda" width="600" height="400" /></p>
+<p><span style="font-size: 14pt;"><strong>Objetivos</strong></span></p>
+<ul>
+<li>Para determinar si hay algún problema con su conjunto de datos.</li>
+<li>Para determinar si la pregunta que está haciendo puede ser respondida por los datos que tiene.</li>
+<li>Desarrollar un bosquejo de la respuesta a su pregunta.<br />
+<ul>
+<li><u>Ejemplo</u>: ¿Las ciudades del este del país tienen niveles de ozono más altos que las ciudades del oeste?
+<ul>
+<li>Para responder esta pregunta necesito datos de ozono, ciudades y de las regiones</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><span style="font-size: 14pt;"><strong>Tipos de Análisis</strong></span></p>
+<ul>
+<li><b>Análisis </b><b>univariado</b>: Es la forma más simple de analizar datos donde examinamos cada variable individualmente.
+<ul>
+<li>Para las características categóricas podemos usar tablas de frecuencia o gráficos de barras que calcularán el número de cada categoría en una variable particular.</li>
+<li>Para las características numéricas, las gráficas de densidad de probabilidad se pueden usar para observar la distribución de la variable.</li>
+</ul>
+</li>
+<li><b>Análisis multivariado</b>: es un método estadístico utilizado para determinar la contribución de varios factores en un simple evento o resultado.
+<ul>
+<li>Ejemplos: análisis de componentes principales, análisis factorial, análisis discriminante, análisis de correlación etc.</li>
+</ul>
+</li>
+</ul>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="estadstica.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="actividad3.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>
